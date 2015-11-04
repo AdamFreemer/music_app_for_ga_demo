@@ -38,12 +38,6 @@
         </tbody>
       </table>
       <p><%= link_to 'New Song', new_song_path %></p>
-      <div class="flickr_pagination">
-        <div class="page_info">
-          <%= will_paginate @Songs %>
-        </div>
-      </div>
-
     </div>
   </body>
 </html>
