@@ -11,6 +11,7 @@
   </head>
   <body>
     <div class="container">
+
       <h1>Songs</h1>        
       <table class="table table-hover table-bordered table-striped">
         <thead>
@@ -23,6 +24,7 @@
           </tr>
         </thead>
         <tbody>
+          <%= @test %>
           <% @songs.each do |song| %>
           <tr>
             <td><%= image_tag song.cover.url(:thumb) %>
@@ -40,7 +42,7 @@
       <p><%= link_to 'New Song', new_song_path %></p>
       <div class="flickr_pagination">
         <div class="page_info">
-          <%= will_paginate @Songs %>
+          <%= will_paginate @ongs %>
         </div>
       </div>
 
